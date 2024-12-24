@@ -157,6 +157,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            margin-bottom: 20px;
         }
 
         .nav-container {
@@ -194,12 +195,12 @@
 
         /* Section Styles */
         section {
-            padding: 50px 0;
+            padding: 20px 0;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         /* Card Styles */
@@ -254,6 +255,15 @@
             font-weight: 500;
             margin: 0;
             color: #333;
+        }
+        
+        .icon-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 76px;
+            height: 76px;
+            position: relative;
         }
 
         .expand-icon {
@@ -502,6 +512,7 @@
                 <br>
                 <p class="researchinterest"><strong>Research Interest</strong></p>
                 <p class="researchinterest">Software Architecture for Resilient AI Services; Information Systems and Natural Language Processing in Finance</p>
+                <!-- <br> -->
                 <p class="coursework"><strong>Relevant Coursework</strong></p>
                 <p class="coursework">Discrete Mathematics; Data Structures and Algorithms; Operating Systems; Computer Networks; Machine Learning; Computer Vision; Deep Learning for Human Language Processing (Special Project)</p>
                 <a href="mailto:alexlyu0419@gmail.com" class="hire-button">Contact Me</a>
@@ -617,12 +628,43 @@
         <div class="container">
             <h2 class="section-title">Research Projects</h2>
             <div class="card">
-                <div class="card-content">
-                    <h3>Research Project Title</h3>
-                    <p>Brief description of the research project. Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit.</p>
+                <div class="expandable-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>QoS Adaptation of Edge Computing-Based Metaverse Service in Telemedicine</h3>
+                            <p>Department of Electrical Engineering, NTU</p>
+                            <p>Advisor: Prof. Sy-Yen Kuo, Prof. Yung-Li Hu</p>
+                        </div>
+                        <div>
+                            <img src="./img/scholarship.png" class="icon-image" />
+                            <p style="color:black"><i>Scholarship</i></p>
+                        </div>
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="card-content-expandable">
+                        <div class="card-content-inner">
+                            <p><strong>Abstract: </strong></p>
+                            <a href="https://www.w3schools.com/" target="_blank">Paper Link</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery-container">
+                <div class="expandable-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>A Design of Resilient Software Framework on Edge Computing Service</h3>
+                            <p>Research Center for Information Technology Innovation, Academia Sinica</p>
+                            <p>Advisor: Prof. Yung-Li Hu, Prof. Yen-Nun Huang</p>
+                        </div>
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="card-content-expandable">
+                        <div class="card-content-inner">
+                            <p><strong>Abstract: </strong></p>
+                            <a href="https://www.w3schools.com/" target="_blank">Paper Link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="gallery-container">
                     <div class="gallery">
                         <div class="gallery-item">
                             <img src="/api/placeholder/300/200" alt="Research Image 1">
@@ -646,7 +688,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -656,18 +698,19 @@
             <div class="container">
                 <h2 class="section-title">Professional Experiences</h2>
                 <div class="card">
-                    <div class="card-content">
-                        <h3>Course Title</h3>
-                        <p>Institution, Semester/Year</p>
-                        <p>Brief description of the course content and your role.</p>
-                    </div>
-                    <div class="gallery-container">
-                        <div class="gallery">
-                            <div class="gallery-item">
-                                <img src="/api/placeholder/300/200" alt="Course Image 1">
+                    <div class="expandable-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Research Internship</h3>
+                                <p>Department of Computer Science and Engineering, Chinese University of Hong Kong</p>
+                                <p>Advisor: Prof. Sy-Yen Kuo, Prof. Yung-Li Hu</p>
                             </div>
-                            <div class="gallery-item">
-                                <img src="/api/placeholder/300/200" alt="Course Image 2">
+                            <div class="expand-icon"></div>
+                        </div>
+                        <div class="card-content-expandable">
+                            <div class="card-content-inner">
+                                <p><strong>Abstract: </strong></p>
+                                <a href="https://www.w3schools.com/" target="_blank">Paper Link</a>
                             </div>
                         </div>
                     </div>
