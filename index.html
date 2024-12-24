@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academic Personal Website</title>
     <style>
+        /* brown */
+        /* :root { */
+            /* --primary-color: #5C4B51; */
+            /* Warm grey */
+            /* --secondary-color: #8B1E3F; */
+            /* Burgundy accent */
+            /* --text-color: #3C3C3C; */
+            /* --light-bg: #F7F4F5; */
+        /* } */
+
+        /* pink */
+        /* :root { */
+            /* --primary-color: #C17C74;    Warm rose */
+            /* --secondary-color: #E6A4A4;   Light coral */
+            /* --text-color: #4A4A4A; */
+            /* --light-bg: #FDF6F6;         Very light warm pink */
+            /* --header-bg: #FDF6F6; */
+            /* --accent-color: #D8B4B4;     Muted pink */
+        /* } */
+
         :root {
-            --primary-color: #8BA6D1;
-            --secondary-color: #E87B67;
-            --text-color: #333;
-            --light-bg: #f5f5f5;
+            --primary-color: #1B3166;    /* Navy blue */
+            --secondary-color: #E17267;   /* Coral red */
+            --text-color: #2D2D2D;
+            --light-bg: #F5F6F8;
+            --header-bg: #F5F6F8;
         }
 
         * {
@@ -20,6 +42,7 @@
         }
 
         body {
+            background-color: white;
             line-height: 1.6;
             color: var(--text-color);
         }
@@ -31,7 +54,7 @@
         }
 
         /* Header Styles */
-        header {
+        /* header {
             background: linear-gradient(to right, white 60%, var(--primary-color) 40%);
             padding: 50px 0;
         }
@@ -40,17 +63,39 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+        } */
+
+        header {
+            background: var(--header-bg);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
         }
 
         .profile-info {
-            max-width: 50%;
+            max-width: 600px;
         }
 
-        .profile-image {
+        /* .profile-image {
             width: 300px;
             height: 300px;
             object-fit: cover;
             border-radius: 10px;
+        } */
+
+        .profile-image {
+            width: 400px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 0;
+            margin-right: -20px;
         }
 
         .greeting {
@@ -62,15 +107,36 @@
             margin-bottom: 10px;
         }
 
-        h1 {
+        /* h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
+        } */
+
+        .small-heading {
+            color: var(--secondary-color);
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 3.5em;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
 
         .title {
             font-size: 1.2em;
             color: #666;
             margin-bottom: 20px;
+            /* text-align: center; */
+        }
+
+        .intro {
+            text-align: justify;
         }
 
         .hire-button {
@@ -87,7 +153,7 @@
         .sections-nav {
             background-color: white;
             padding: 20px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -99,12 +165,15 @@
             gap: 30px;
             overflow-x: auto;
             padding: 10px 0;
-            scrollbar-width: none; /* Firefox */
-            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
         }
 
         .nav-container::-webkit-scrollbar {
-            display: none; /* Chrome, Safari, Opera */
+            display: none;
+            /* Chrome, Safari, Opera */
         }
 
         .nav-item {
@@ -117,7 +186,8 @@
             white-space: nowrap;
         }
 
-        .nav-item:hover, .nav-item.active {
+        .nav-item:hover,
+        .nav-item.active {
             background-color: var(--primary-color);
             color: white;
         }
@@ -137,7 +207,7 @@
             background: white;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
         }
 
@@ -330,6 +400,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
@@ -337,11 +408,11 @@
             <div class="profile-info">
                 <span class="greeting">Hello!</span>
                 <h1>Yi-Te Alex Lu</h1>
-                <p class="title">Your Title or Position</p>
-                <p>Brief introduction about yourself. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="mailto:your.email@example.com" class="hire-button">Contact Me</a>
+                <p class="title">Bachelor of Science in Electrical Engineering<br>National Taiwan University</p>
+                <p class="intro">I have a strong background in computer science, specializing in modern software systems, including edge computing and microservices, with a focus on their resilience and reliability in AI-driven services. Additionally, I specialize in natural language processing, particularly its applications in financial information systems. These interests have led to multiple experiences in both industry and academia, culminating in five research publications, participation in two research projects, and three internships.</p>
+                <a href="mailto:alexlyu0419@gmail.com" class="hire-button">Contact Me</a>
             </div>
-            <img src="/api/placeholder/400/400" alt="Profile Picture" class="profile-image">
+            <img src="./img/" alt="Profile Picture" class="profile-image">
         </div>
     </header>
 
@@ -353,6 +424,7 @@
                 <a href="#publications" class="nav-item">Publications</a>
                 <a href="#projects" class="nav-item">Projects</a>
                 <a href="#courses" class="nav-item">Courses</a>
+                <a href="#extracurricular" class="nav-item">Extracurricular</a>
             </div>
         </div>
     </nav>
@@ -364,26 +436,30 @@
             <div class="card">
                 <div class="card-content">
                     <h3>Research Project Title</h3>
-                    <p>Brief description of the research project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Brief description of the research project. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
                 </div>
                 <div class="gallery-container">
                     <div class="gallery">
                         <div class="gallery-item">
                             <img src="/api/placeholder/300/200" alt="Research Image 1">
                             <div class="gallery-item-description">
-                                <p>Detailed description of research image 1. This could include methodology, results, or key findings.</p>
+                                <p>Detailed description of research image 1. This could include methodology, results, or
+                                    key findings.</p>
                             </div>
                         </div>
                         <div class="gallery-item">
                             <img src="/api/placeholder/300/200" alt="Research Image 2">
                             <div class="gallery-item-description">
-                                <p>Detailed description of research image 2. Explain the significance of this particular aspect of your research.</p>
+                                <p>Detailed description of research image 2. Explain the significance of this particular
+                                    aspect of your research.</p>
                             </div>
                         </div>
                         <div class="gallery-item">
                             <img src="/api/placeholder/300/200" alt="Research Image 3">
                             <div class="gallery-item-description">
-                                <p>Detailed description of research image 3. Highlight key observations or conclusions drawn from this part of the research.</p>
+                                <p>Detailed description of research image 3. Highlight key observations or conclusions
+                                    drawn from this part of the research.</p>
                             </div>
                         </div>
                     </div>
@@ -466,15 +542,39 @@
         </div>
     </section>
 
+    <!-- extracurricular Section -->
+    <section id="extracurricular">
+        <div class="container">
+            <h2 class="section-title">Extracurricular</h2>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Course Title</h3>
+                    <p>Institution, Semester/Year</p>
+                    <p>Brief description of the course content and your role.</p>
+                </div>
+                <div class="gallery-container">
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img src="/api/placeholder/300/200" alt="Course Image 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/api/placeholder/300/200" alt="Course Image 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p><i class="contact-icon">📧</i> email@example.com</p>
-                    <p><i class="contact-icon">📍</i> University/Institution</p>
-                    <p><i class="contact-icon">📱</i> Phone number</p>
+                    <p><i class="contact-icon">📧</i> alexlyu0419@gmail.com</p>
+                    <p><i class="contact-icon">📍</i> National Taiwan University<br>Department of Electrical Engineering</p>
+                    <!-- <p><i class="contact-icon">📱</i> Phone number</p> -->
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
@@ -486,10 +586,10 @@
                 <div class="footer-section">
                     <h3>Connect</h3>
                     <div class="social-links">
-                        <a href="#" class="social-link">LinkedIn</a>
-                        <a href="#" class="social-link">GitHub</a>
-                        <a href="#" class="social-link">Google Scholar</a>
-                        <a href="#" class="social-link">ResearchGate</a>
+                        <a href="https://www.linkedin.com/in/yitelualex0419" class="social-link">LinkedIn</a>
+                        <a href="https://github.com/AlexLu0419/AlexLu0419.github.io" class="social-link">GitHub</a>
+                        <!-- <a href="#" class="social-link">Google Scholar</a> -->
+                        <!-- <a href="#" class="social-link">ResearchGate</a> -->
                     </div>
                 </div>
             </div>
@@ -501,7 +601,7 @@
 
     <script>
         // Add active class to nav items on scroll
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const sections = document.querySelectorAll('section');
             const navItems = document.querySelectorAll('.nav-item');
 
@@ -525,4 +625,5 @@
         });
     </script>
 </body>
+
 </html>
