@@ -135,7 +135,7 @@
             /* text-align: center; */
         }
 
-        .intro {
+        .intro, .researchinterest, .coursework {
             text-align: justify;
         }
 
@@ -207,11 +207,13 @@
             background: white;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
             margin-bottom: 30px;
         }
 
         .card-content {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             margin-bottom: 20px;
         }
 
@@ -222,6 +224,93 @@
         .card p {
             color: #666;
             margin-bottom: 15px;
+        }
+
+        /* expandable card */
+        .expandable-card {
+            /* max-width: 600px; */
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .expandable-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .card-header {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 0;
+            color: #333;
+        }
+
+        .expand-icon {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .expand-icon::before,
+        .expand-icon::after {
+            content: '';
+            position: absolute;
+            background-color: #666;
+            transition: all 0.3s ease;
+        }
+
+        .expand-icon::before {
+            width: 2px;
+            height: 12px;
+            top: 6px;
+            left: 11px;
+        }
+
+        .expand-icon::after {
+            width: 12px;
+            height: 2px;
+            top: 11px;
+            left: 6px;
+        }
+
+        .card-content-expandable {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .card-content-inner {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding: 0 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .expandable-card.expanded .card-content-expandable {
+            max-height: 500px;
+        }
+
+        .expandable-card.expanded .expand-icon::before {
+            transform: rotate(90deg);
+            opacity: 0;
+        }
+
+        /* Add some spacing between multiple cards */
+        .expandable-card + .expandable-card {
+            margin-top: 16px;
         }
 
         /* Horizontal Scrolling Gallery */
@@ -410,6 +499,11 @@
                 <h1>Yi-Te Alex Lu</h1>
                 <p class="title">Bachelor of Science in Electrical Engineering<br>National Taiwan University</p>
                 <p class="intro">I have a strong background in computer science, specializing in modern software systems, including edge computing and microservices, with a focus on their resilience and reliability in AI-driven services. Additionally, I specialize in natural language processing, particularly its applications in financial information systems. These interests have led to multiple experiences in both industry and academia, culminating in five research publications, participation in two research projects, and three internships.</p>
+                <br>
+                <p class="researchinterest"><strong>Research Interest</strong></p>
+                <p class="researchinterest">Software Architecture for Resilient AI Services; Information Systems and Natural Language Processing in Finance</p>
+                <p class="coursework"><strong>Relevant Coursework</strong></p>
+                <p class="coursework">Discrete Mathematics; Data Structures and Algorithms; Operating Systems; Computer Networks; Machine Learning; Computer Vision; Deep Learning for Human Language Processing (Special Project)</p>
                 <a href="mailto:alexlyu0419@gmail.com" class="hire-button">Contact Me</a>
             </div>
             <img src="./img/" alt="Profile Picture" class="profile-image">
@@ -420,19 +514,108 @@
     <nav class="sections-nav">
         <div class="container">
             <div class="nav-container">
-                <a href="#research" class="nav-item">Research</a>
                 <a href="#publications" class="nav-item">Publications</a>
+                <a href="#research" class="nav-item">Research Projects</a>
+                <a href="#work" class="nav-item">Professional Experiences</a>
                 <a href="#projects" class="nav-item">Projects</a>
-                <a href="#courses" class="nav-item">Courses</a>
                 <a href="#extracurricular" class="nav-item">Extracurricular</a>
             </div>
         </div>
     </nav>
 
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="card">
+                <div class="expandable-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Financial Named Entity Recognition: How Far Can LLM Go?</h3>
+                            <p><strong>Yi-Te Lu</strong>, YinTong Huo</p>
+                            <p>The 2025 FinNLP-FNP-LLMFinLegal Joint Workshop, in conjunction with COLING 2025</p>
+                        </div>
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="card-content-expandable">
+                        <div class="card-content-inner">
+                            <p><strong>Abstract: </strong></p>
+                            <a href="https://www.w3schools.com/" target="_blank">Paper Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="expandable-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>A Mobile Edge Computing Based QoS Adaptation Architecture for Smart Healthcare</h3>
+                            <p><strong>Yi-Te Lu</strong>, Hao-Ying Cheng, Yung-Li Hu, I Chang Tsai, Yennun Huang, Sy-Yen Kuo</p>
+                            <p>The 2023 Taiwan Academic Network Conference (TANET)</p>
+                        </div>
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="card-content-expandable">
+                        <div class="card-content-inner">
+                            <p><strong>Abstract: </strong></p>
+                            <a href="https://www.w3schools.com/" target="_blank">Paper Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="expandable-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>QoS-Aware Adaptation of Edge-Enabled Metaverse Service in Telemedicine Applications</h3>
+                            <p><strong>Yi-Te Lu</strong>, Hao-Ying Cheng, Yung-Li Hu, I Chang Tsai, Yennun Huang, Sy-Yen Kuo</p>
+                            <p>Poster presented at 2023 19th Taiwan Conference on Software Engineering (TCSE)</p>
+                        </div>
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="card-content-expandable">
+                        <div class="card-content-inner">
+                            <p><strong>Abstract: </strong></p>
+                            <a href="https://www.w3schools.com/" target="_blank">Paper Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="expandable-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>A Design of Resilient Software Framework on Edge Computing</h3>
+                            <p>Hao-Ying Cheng, <strong>Yi-Te Lu</strong>, Yung-Li Hu, Chuan-Ming Liu, Yennun Huang</p>
+                            <p>The 2022 Taiwan Academic Network Conference (TANET)</p>
+                        </div>
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="card-content-expandable">
+                        <div class="card-content-inner">
+                            <p><strong>Abstract: </strong></p>
+                            <a href="https://www.w3schools.com/" target="_blank">Paper Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="expandable-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Design and Implementation on Context-Aware Service Software in Pervasive Edge Computing Environment</h3>
+                            <p>Zong-Lun Li, <strong>Yi-Te Lu</strong>, Yung-Li Hu, Yennun Huang, Sy-Yen Kuo</p>
+                            <p>Poster presented at 2021 17th Taiwan Conference on Software Engineering (TCSE)</p>
+                        </div>
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="card-content-expandable">
+                        <div class="card-content-inner">
+                            <p><strong>Abstract: </strong></p>
+                            <a href="https://www.w3schools.com/" target="_blank">Paper Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Research Experience Section -->
     <section id="research">
         <div class="container">
-            <h2 class="section-title">Research Experience</h2>
+            <h2 class="section-title">Research Projects</h2>
             <div class="card">
                 <div class="card-content">
                     <h3>Research Project Title</h3>
@@ -467,37 +650,39 @@
             </div>
         </div>
     </section>
-
-    <!-- Publications Section -->
-    <section id="publications">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="card">
-                <div class="card-content">
-                    <h3>Publication Title</h3>
-                    <p>Authors, Journal/Conference, Year</p>
-                    <p>Brief description of the publication and its impact.</p>
-                </div>
-                <div class="gallery-container">
-                    <div class="gallery">
-                        <div class="gallery-item">
-                            <img src="/api/placeholder/300/200" alt="Publication Image 1">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="/api/placeholder/300/200" alt="Publication Image 2">
+    
+        <!-- Courses Section -->
+        <section id="work">
+            <div class="container">
+                <h2 class="section-title">Professional Experiences</h2>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Course Title</h3>
+                        <p>Institution, Semester/Year</p>
+                        <p>Brief description of the course content and your role.</p>
+                    </div>
+                    <div class="gallery-container">
+                        <div class="gallery">
+                            <div class="gallery-item">
+                                <img src="/api/placeholder/300/200" alt="Course Image 1">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="/api/placeholder/300/200" alt="Course Image 2">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
 
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="card">
-                <div class="card-content">
+                <p>To Be Continued...</p>
+                <!-- <div class="card-content">
                     <h3>Project Title</h3>
                     <p>Brief description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
@@ -513,31 +698,7 @@
                             <img src="/api/placeholder/300/200" alt="Project Image 3">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Courses Section -->
-    <section id="courses">
-        <div class="container">
-            <h2 class="section-title">Courses</h2>
-            <div class="card">
-                <div class="card-content">
-                    <h3>Course Title</h3>
-                    <p>Institution, Semester/Year</p>
-                    <p>Brief description of the course content and your role.</p>
-                </div>
-                <div class="gallery-container">
-                    <div class="gallery">
-                        <div class="gallery-item">
-                            <img src="/api/placeholder/300/200" alt="Course Image 1">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="/api/placeholder/300/200" alt="Course Image 2">
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -547,12 +708,13 @@
         <div class="container">
             <h2 class="section-title">Extracurricular</h2>
             <div class="card">
-                <div class="card-content">
-                    <h3>Course Title</h3>
-                    <p>Institution, Semester/Year</p>
-                    <p>Brief description of the course content and your role.</p>
-                </div>
-                <div class="gallery-container">
+                <p>To Be Continued...</p>
+                <!-- <div class="card-content"> -->
+                    <!-- <h3>Course Title</h3> -->
+                    <!-- <p>Institution, Semester/Year</p> -->
+                    <!-- <p>Brief description of the course content and your role.</p> -->
+                <!-- </div> -->
+                <!-- <div class="gallery-container">
                     <div class="gallery">
                         <div class="gallery-item">
                             <img src="/api/placeholder/300/200" alt="Course Image 1">
@@ -561,7 +723,7 @@
                             <img src="/api/placeholder/300/200" alt="Course Image 2">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -578,10 +740,11 @@
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
-                    <a href="#research">Research</a>
                     <a href="#publications">Publications</a>
+                    <a href="#research">Research Projects</a>
+                    <a href="#work">Professional Experiences</a>
                     <a href="#projects">Projects</a>
-                    <a href="#courses">Courses</a>
+                    <a href="#extracurricular">Extracurricular</a>
                 </div>
                 <div class="footer-section">
                     <h3>Connect</h3>
@@ -610,7 +773,7 @@
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
-                    if (pageYOffset >= sectionTop - 60) {
+                    if (pageYOffset >= sectionTop - 100) {
                         current = section.getAttribute('id');
                     }
                 });
@@ -619,6 +782,19 @@
                     item.classList.remove('active');
                     if (item.getAttribute('href').slice(1) === current) {
                         item.classList.add('active');
+                    }
+                });
+            });
+        });
+        document.querySelectorAll('.expandable-card').forEach(card => {
+            card.addEventListener('click', () => {
+                // Toggle expanded class
+                card.classList.toggle('expanded');
+                
+                // Optionally collapse other cards when one is expanded
+                document.querySelectorAll('.expandable-card').forEach(otherCard => {
+                    if (otherCard !== card) {
+                        otherCard.classList.remove('expanded');
                     }
                 });
             });
