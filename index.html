@@ -8,27 +8,29 @@
     <style>
         /* brown */
         /* :root { */
-            /* --primary-color: #5C4B51; */
-            /* Warm grey */
-            /* --secondary-color: #8B1E3F; */
-            /* Burgundy accent */
-            /* --text-color: #3C3C3C; */
-            /* --light-bg: #F7F4F5; */
+        /* --primary-color: #5C4B51; */
+        /* Warm grey */
+        /* --secondary-color: #8B1E3F; */
+        /* Burgundy accent */
+        /* --text-color: #3C3C3C; */
+        /* --light-bg: #F7F4F5; */
         /* } */
 
         /* pink */
         /* :root { */
-            /* --primary-color: #C17C74;    Warm rose */
-            /* --secondary-color: #E6A4A4;   Light coral */
-            /* --text-color: #4A4A4A; */
-            /* --light-bg: #FDF6F6;         Very light warm pink */
-            /* --header-bg: #FDF6F6; */
-            /* --accent-color: #D8B4B4;     Muted pink */
+        /* --primary-color: #C17C74;    Warm rose */
+        /* --secondary-color: #E6A4A4;   Light coral */
+        /* --text-color: #4A4A4A; */
+        /* --light-bg: #FDF6F6;         Very light warm pink */
+        /* --header-bg: #FDF6F6; */
+        /* --accent-color: #D8B4B4;     Muted pink */
         /* } */
 
         :root {
-            --primary-color: #1B3166;    /* Navy blue */
-            --secondary-color: #E17267;   /* Coral red */
+            --primary-color: #1B3166;
+            /* Navy blue */
+            --secondary-color: #E17267;
+            /* Coral red */
             --text-color: #2D2D2D;
             --light-bg: #F5F6F8;
             --header-bg: #F5F6F8;
@@ -83,13 +85,6 @@
             max-width: 600px;
         }
 
-        /* .profile-image {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-        } */
-
         .profile-image {
             width: 400px;
             height: auto;
@@ -135,7 +130,10 @@
             /* text-align: center; */
         }
 
-        .intro, .researchinterest, .coursework, .abstract {
+        .intro,
+        .researchinterest,
+        .coursework,
+        .abstract {
             text-align: justify;
         }
 
@@ -195,132 +193,7 @@
 
         /* Section Styles */
         section {
-            padding: 20px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* Card Styles */
-        .card {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-            margin-bottom: 30px;
-        }
-
-        .card-content {
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        /* expandable card */
-        .expandable-card {
-            /* max-width: 600px; */
-            margin: 20px auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .expandable-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .card-header {
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #eee;
-        }
-
-        .card-title {
-            font-size: 1.25rem;
-            font-weight: 500;
-            margin: 0;
-            color: #333;
-        }
-        
-        .icon-image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 76px;
-            height: 76px;
-            position: relative;
-        }
-
-        .expand-icon {
-            width: 24px;
-            height: 24px;
-            transition: transform 0.3s ease;
-            position: relative;
-        }
-
-        .expand-icon::before,
-        .expand-icon::after {
-            content: '';
-            position: absolute;
-            background-color: #666;
-            transition: all 0.3s ease;
-        }
-
-        .expand-icon::before {
-            width: 2px;
-            height: 12px;
-            top: 6px;
-            left: 11px;
-        }
-
-        .expand-icon::after {
-            width: 12px;
-            height: 2px;
-            top: 11px;
-            left: 6px;
-        }
-
-        .card-content-expandable {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-
-        .card-content-inner {
-            margin-top: 10px;
-            margin-bottom: 15px;
-            padding: 0 20px;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .expandable-card.expanded .card-content-expandable {
-            max-height: 500px;
-        }
-
-        .expandable-card.expanded .expand-icon::before {
-            transform: rotate(90deg);
-            opacity: 0;
-        }
-
-        /* Add some spacing between multiple cards */
-        .expandable-card + .expandable-card {
-            margin-top: 16px;
+            padding: 6px 0;
         }
 
         /* Horizontal Scrolling Gallery */
@@ -467,6 +340,204 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        .showcase-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .category-title {
+            font-size: 2rem;
+            color: #2d3748;
+            margin-bottom: 24px;
+            border-bottom: 3px solid #4299e1;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .showcase-grid {
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+            /* gap: 24px; */
+            margin-bottom: 40px;
+        }
+
+        .showcase-item {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+
+        }
+
+        .showcase-item-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border-bottom: 1px solid #eee; */
+        }
+
+        .showcase-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .award-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #ffd700;
+            color: #2d3748;
+            padding: 8px 16px;
+            border-bottom-left-radius: 12px;
+            font-weight: bold;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .showcase-item:hover .award-badge {
+            transform: translateY(0);
+        }
+
+        .item-title {
+            font-size: 1.25rem;
+            color: #2d3748;
+            margin: 0 0 12px 0;
+            font-weight: 600;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .awarded .item-title::before {
+            content: "🏆";
+            /* margin-left: 5px; */
+            margin-right: 5px;
+            font-size: 1rem;
+        }
+
+        .expand-icon {
+            width: 24px;
+            height: 24px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .expand-icon::before,
+        .expand-icon::after {
+            content: '';
+            position: absolute;
+            background-color: #4a5568;
+            transition: all 0.3s ease;
+        }
+
+        .expand-icon::before {
+            width: 2px;
+            height: 12px;
+            top: 6px;
+            left: 11px;
+        }
+
+        .expand-icon::after {
+            width: 12px;
+            height: 2px;
+            top: 11px;
+            left: 6px;
+        }
+
+        .showcase-item.expanded .expand-icon::before {
+            transform: rotate(90deg);
+            opacity: 0;
+        }
+
+        .item-description {
+            color: #4a5568;
+            margin: 0 0 1px 0;
+            line-height: 1.6;
+        }
+
+        .item-meta {
+            font-size: 0.875rem;
+            color: #718096;
+            display: flex;
+            gap: 16px;
+            /* border-top: 1px solid #e2e8f0; */
+            /* padding-top: 12px; */
+        }
+
+        .highlight-ribbon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #4299e1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .awarded .highlight-ribbon {
+            opacity: 1;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .tag {
+            background: #ebf8ff;
+            color: #2b6cb0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .awarded .tag {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .expanded-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        .showcase-item.expanded .expanded-content {
+            max-height: 800px;
+        }
+
+        .expanded-content-inner {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .expanded-section {
+            margin-bottom: 12px;
+        }
+
+        .expanded-section-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .showcase-item.expanded {
+            grid-column: 1 / -1;
+            transition: all 0.3s ease;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .header-content {
@@ -511,9 +582,12 @@
                 <!-- <p class="intro">I have a strong background in computer science, specializing in modern software systems, including edge computing and microservices, with a focus on their resilience and reliability in AI-driven services. Additionally, I specialize in natural language processing, particularly its applications in financial information systems. These interests have led to multiple experiences in both industry and academia, culminating in five research publications, participation in two research projects, and three internships.</p> -->
                 <!-- <br> -->
                 <p class="researchinterest"><strong>Research Interest</strong></p>
-                <p class="researchinterest">Software Systems for Resilient AI Services; Information Systems and Natural Language Processing in Finance</p>
+                <p class="researchinterest">Software Systems for Resilient AI Services; <br> Information Systems and
+                    Natural Language Processing in Finance</p>
                 <p class="coursework"><strong>Relevant Coursework</strong></p>
-                <p class="coursework">Discrete Mathematics; Data Structures and Algorithms; Operating Systems; Computer Networks; Machine Learning; Computer Vision; Deep Learning for Human Language Processing (Special Project)</p>
+                <p class="coursework">Discrete Mathematics; Data Structures and Algorithms; Operating Systems; Computer
+                    Networks; Machine Learning; Computer Vision; Deep Learning for Human Language Processing (Special
+                    Project)</p>
                 <a href="mailto:alexlyu0419@gmail.com" class="hire-button">Contact Me</a>
             </div>
             <img src="./img/Yi-Te_Lu.png" alt="Profile Picture" class="profile-image">
@@ -535,97 +609,310 @@
 
     <!-- Publications Section -->
     <section id="publications">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="card">
-                <div class="expandable-card">
-                    <div class="card-header">
-                        <div>
-                            <h3>Financial Named Entity Recognition: How Far Can LLM Go?</h3>
-                            <p><strong>Yi-Te Lu</strong>, YinTong Huo</p>
-                            <p>The 2025 FinNLP-FNP-LLMFinLegal Joint Workshop, in conjunction with COLING 2025</p>
+        <div class="showcase-container">
+            <h2 class="category-title">Publications</h2>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="item-title">
+                                Financial Named Entity Recognition: How Far Can LLM Go?
+                            </div>
+                            <div class="tags">
+                                <span class="tag">Natural Language Processing</span>
+                                <span class="tag">Large Language Model</span>
+                                <!-- <span class="tag">Docker</span> -->
+                            </div>
+                            <p class="item-description">
+                                <strong>Yi-Te Lu</strong>, YinTong Huo
+                            </p>
+                            <p class="item-description">
+                                The 2025 FinNLP-FNP-LLMFinLegal Joint Workshop, in conjunction with COLING 2025
+                            </p>
                         </div>
                         <div class="expand-icon"></div>
                     </div>
-                    <div class="card-content-expandable">
-                        <div class="card-content-inner">
-                            <p><strong>Abstract: </strong></p>
-                            <p class="abstract">The surge of large language models (LLMs) has revolutionized the extraction and analysis of crucial information from a growing volume of financial statements, announcements, and business news. Recognition for named entities to construct structured data poses a significant challenge in analyzing financial documents and is a foundational task for intelligent financial analytics. However, how effective are these generic LLMs and their performance under various prompts are yet need a better understanding. To fill in the blank, we present a systematic evaluation of state-of-the-art LLMs and prompting methods in the financial Named Entity Recognition (NER) problem. Specifically, our experimental results highlight their strengths and limitations, identify five representative failure types, and provide insights into their potential and challenges for domain-specific tasks.</p>
-                            <a href="https://arxiv.org/abs/2501.02237" target="_blank">Paper Link</a>
+                    <div class="item-meta">
+                        <span>Dec. 2024</span>
+                        <!-- <span>Team Lead</span> -->
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p>
+                                    - Conducted a systematic evaluation of generic LLMs for financial named entity
+                                    recognition tasks <br>
+                                    - Compared two fine-tuned language models, three state-of-the-art LLMs, and their
+                                    lightweight versions across three prompting designs <br>
+                                    - Categorized five representative failure types and proposed potential improvement
+                                    directions
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Abstract</div>
+                                <p class="abstract">The surge of large language models (LLMs) has revolutionized the
+                                    extraction and analysis of crucial information from a growing volume of financial
+                                    statements, announcements, and business news. Recognition for named entities to
+                                    construct structured data poses a significant challenge in analyzing financial
+                                    documents
+                                    and is a foundational task for intelligent financial analytics. However, how
+                                    effective
+                                    are these generic LLMs and their performance under various prompts are yet need a
+                                    better
+                                    understanding. To fill in the blank, we present a systematic evaluation of
+                                    state-of-the-art LLMs and prompting methods in the financial Named Entity
+                                    Recognition
+                                    (NER) problem. Specifically, our experimental results highlight their strengths and
+                                    limitations, identify five representative failure types, and provide insights into
+                                    their
+                                    potential and challenges for domain-specific tasks.</p>
+                            </div>
+                            <div class="expanded-section">
+                                <a href="https://arxiv.org/abs/2501.02237" target="_blank">Paper Link</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="expandable-card">
-                    <div class="card-header">
-                        <div>
-                            <h3>A Mobile Edge Computing Based QoS Adaptation Architecture for Smart Healthcare</h3>
-                            <h3>基於行動邊緣運算架構之智慧醫療服務品質調適</h3>
-                            <p><strong>Yi-Te Lu</strong>, Hao-Ying Cheng, Yung-Li Hu, I Chang Tsai, Yennun Huang, Sy-Yen Kuo</p>
-                            <p>The 2023 Taiwan Academic Network Conference (TANET)</p>
+                <div class="showcase-item">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="item-title">
+                                A Mobile Edge Computing Based QoS Adaptation Architecture for Smart Healthcare<br>
+                                基於行動邊緣運算架構之智慧醫療服務品質調適
+                            </div>
+                            <div class="tags">
+                                <!-- <span class="tag">Artificial intelligence</span> -->
+                                <span class="tag">Pytorch</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                            <p class="item-description">
+                                <strong>Yi-Te Lu</strong>, Hao-Ying Cheng, Yung-Li Hu, I Chang Tsai, Yennun Huang,
+                                Sy-Yen Kuo
+                            </p>
+                            <p class="item-description">
+                                The 2023 Taiwan Academic Network Conference (TANET)
+                            </p>
                         </div>
                         <div class="expand-icon"></div>
                     </div>
-                    <div class="card-content-expandable">
-                        <div class="card-content-inner">
-                            <p><strong>Abstract: </strong></p>
-                            <p class="abstract">Mobile edge computing is a vital network service architecture in the modern information industry. It excels in integrating IoT device computing power and ensuring the reliability of interactions between edge computing servers and IoT devices, enabling better quality of service. Computation offloading is a widely used technique within MEC, which addresses limitations such as limited edge device computational resources and high energy consumption. By shifting high-computational and energy-consuming tasks to nearby edge servers, computation offloading reduces computation latency and extends device lifespans. Furthermore, with the rise of smart healthcare and the urgency caused by the pandemic, smart healthcare with the internet of medical things has gained prominence. This research project proposes to enhance the quality of service of smart healthcare within the Mobile Edge Computing framework through computation offloading. Using Taiwan Taoyuan International Airport as an example, the study explores how our approach can improve the accuracy, real-time performance, and reliability of smart emergency medical services.</p>
-                            <p><a href="https://drive.google.com/file/d/1UK7oOHgmt_rS0TgTfS2bO8hm4PvLl7o2/view?usp=sharing" target="_blank">Paper Link</a> | <a href="https://drive.google.com/file/d/19GKkg0fwOPjui1uA8eqhBTmCJiX2Pl0t/view?usp=sharing" target="_blank">Certificate</a></p>
+                    <div class="item-meta">
+                        <span>Nov. 2023</span>
+                        <span>TANET 2023</span>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p>
+                                    - Designed a self-adaptive system for emergency healthcare services at airports <br>
+                                    - Improve AI-driven service responsiveness by up to 35% <br>
+                                    - - Collaborated with the Landseed Medical Center at Taoyuan International Airports
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Abstract</div>
+                                <p class="abstract">
+                                    Mobile edge computing is a vital network service architecture in the modern
+                                    information industry. It excels in integrating IoT device computing power and
+                                    ensuring the reliability of interactions between edge computing servers and IoT
+                                    devices, enabling better quality of service. Computation offloading is a widely used
+                                    technique within MEC, which addresses limitations such as limited edge device
+                                    computational resources and high energy consumption. By shifting high-computational
+                                    and energy-consuming tasks to nearby edge servers, computation offloading reduces
+                                    computation latency and extends device lifespans. Furthermore, with the rise of
+                                    smart healthcare and the urgency caused by the pandemic, smart healthcare with the
+                                    internet of medical things has gained prominence. This research project proposes to
+                                    enhance the quality of service of smart healthcare within the Mobile Edge Computing
+                                    framework through computation offloading. Using Taiwan Taoyuan International Airport
+                                    as an example, the study explores how our approach can improve the accuracy,
+                                    real-time performance, and reliability of smart emergency medical services.
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <p>
+                                    <a href="https://drive.google.com/file/d/1UK7oOHgmt_rS0TgTfS2bO8hm4PvLl7o2/view?usp=sharing"
+                                        target="_blank">Paper Link</a> | <a
+                                        href="https://drive.google.com/file/d/19GKkg0fwOPjui1uA8eqhBTmCJiX2Pl0t/view?usp=sharing"
+                                        target="_blank">Certificate</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="expandable-card">
-                    <div class="card-header">
-                        <div>
-                            <h3>QoS-Aware Adaptation of Edge-Enabled Metaverse Service in Telemedicine Applications</h3>
-                            <h3>邊緣元宇宙服務之服務品質調適於遠距醫療應用</h3>
-                            <h3></h3>
-                            <p><strong>Yi-Te Lu</strong>, Hao-Ying Cheng, Yung-Li Hu, I Chang Tsai, Yennun Huang, Sy-Yen Kuo</p>
-                            <p>Poster presented at 2023 19th Taiwan Conference on Software Engineering (TCSE)</p>
+                <div class="showcase-item">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="item-title">
+                                QoS-Aware Adaptation of Edge-Enabled Metaverse Service in Telemedicine Applications<br>
+                                邊緣元宇宙服務之服務品質調適於遠距醫療應用
+                            </div>
+                            <p class="item-description">
+                                strong>Yi-Te Lu</strong>, Hao-Ying Cheng, Yung-Li Hu, I Chang Tsai, Yennun Huang, Sy-Yen
+                                Kuo
+                            </p>
+                            <p class="item-description">
+                                Poster presented at 2023 19th Taiwan Conference on Software Engineering (TCSE)
+                            </p>
                         </div>
                         <div class="expand-icon"></div>
                     </div>
-                    <div class="card-content-expandable">
-                        <div class="card-content-inner">
-                            <p><strong>Abstract: </strong></p>
-                            <p class="abstract">The metaverse is an emerging technology in the information industry, requiring the handling of massive data flow and computation. This places specific demands on aspects such as computational performance and latency, which impact the quality of service (QoS). Mobile edge computing addresses these QoS requirements of the metaverse by orchestrating computational resources. Therefore, services built on mobile edge computing must possess QoS-awareness and the ability to adapt during operation to maintain their QoS. This research develops a metaverse service based on a mobile edge computing framework, incorporating QoS-awareness and adaptive capabilities. Remote healthcare services are used as the experimental scenario to evaluate and verify the QoS-awareness and adaptation efficiency of the proposed edge computing framework.</p>
-                            <a href="https://drive.google.com/file/d/1LDfb0YTU1aBO_dWdIz2OzljAbiD1fjEO/view?usp=sharing" target="_blank">Paper Link</a>
+                    <div class="item-meta">
+                        <span>Jun. 2022</span>
+                        <span>TCSE 2023</span>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Abstract</div>
+                                <p class="abstract">The metaverse is an emerging technology in the information industry,
+                                    requiring the handling of massive data flow and computation. This places specific
+                                    demands on aspects such as computational performance and latency, which impact the
+                                    quality of service (QoS). Mobile edge computing addresses these QoS requirements of
+                                    the metaverse by orchestrating computational resources. Therefore, services built on
+                                    mobile edge computing must possess QoS-awareness and the ability to adapt during
+                                    operation to maintain their QoS. This research develops a metaverse service based on
+                                    a mobile edge computing framework, incorporating QoS-awareness and adaptive
+                                    capabilities. Remote healthcare services are used as the experimental scenario to
+                                    evaluate and verify the QoS-awareness and adaptation efficiency of the proposed edge
+                                    computing framework.</p>
+                            </div>
+                            <div class="expanded-section">
+                                <a href="https://drive.google.com/file/d/1LDfb0YTU1aBO_dWdIz2OzljAbiD1fjEO/view?usp=sharing"
+                                    target="_blank">Paper Link</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="expandable-card">
-                    <div class="card-header">
-                        <div>
-                            <h3>A Design of Resilient Software Framework on Edge Computing</h3>
-                            <h3>具復原力之邊緣運算服務軟體架構設計</h3>
-                            <p>Hao-Ying Cheng, <strong>Yi-Te Lu</strong>, Yung-Li Hu, Chuan-Ming Liu, Yennun Huang</p>
-                            <p>The 2022 Taiwan Academic Network Conference (TANET)</p>
+                <div class="showcase-item">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="item-title">
+                                A Design of Resilient Software Framework on Edge Computing<br>
+                                具復原力之邊緣運算服務軟體架構設計
+                            </div>
+                            <p class="item-description">
+                                Hao-Ying Cheng, <strong>Yi-Te Lu</strong>, Yung-Li Hu, Chuan-Ming Liu, Yennun Huang
+                            </p>
+                            <p class="item-description">
+                                The 2022 Taiwan Academic Network Conference (TANET)
+                            </p>
                         </div>
                         <div class="expand-icon"></div>
                     </div>
-                    <div class="card-content-expandable">
-                        <div class="card-content-inner">
-                            <p><strong>Abstract: </strong></p>
-                            <p class="abstract">Edge computing services are an important service model in the field of Internet of Things (IoT) applications. By deploying service software on edge computing nodes near application environments, these services improve response immediacy and reduce transmission latency. However, in IoT scenarios, the increase in the number of sensing devices or malicious attacks can cause fluctuations in data traffic, affecting the processing efficiency of the services. Resilient edge computing services possess adaptive capabilities, allowing them to allocate system resources to accommodate changes in the current application environment.<br>The decentralized and resource-constrained nature of edge computing environments presents challenges to achieving resilience. This research proposes a service architecture design methodology for resilient edge computing services based on a decentralized self-adaptive system and a microservices architecture. Using a scenario where fluctuations in data traffic are caused by changes in the number of devices in an IoT environment, we establish an experimental edge computing environment for implementation and verification. The results demonstrate the operational effectiveness of resilient edge computing services in adaptive system resources flexibly to adapt to changes in the application environment within a decentralized and resource-constrained system.</p>
-                            <p><a href="https://drive.google.com/file/d/1_PNxWXs--av1GsZwkxJ6sf8BmI3ZdYu0/view?usp=sharing" target="_blank">Paper Link</a> | <a href="https://drive.google.com/file/d/1yBG9iMpgWHWQYv31BKg_hLwUOJYKLlk0/view?usp=sharing" target="_blank">Certificate</a></p>
+                    <div class="item-meta">
+                        <span>Nov. 2022</span>
+                        <span>TANET 2022</span>
+                        <!-- <span>Team Lead</span> -->
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p>
+                                    - Designed a distributed self-adaptive system for volatile IoT environments using an
+                                    event-driven approach<br>
+                                    - Enabled flexible microservices deployment and distribution of data transmission
+                                    across edge nodes<br>
+                                    - Increased the number of connected IoT sensors by over 5 times while ensuring
+                                    stable system performance
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Abstract</div>
+                                <p class="abstract">Edge computing services are an important service model in the field
+                                    of Internet of Things (IoT) applications. By deploying service software on edge
+                                    computing nodes near application environments, these services improve response
+                                    immediacy and reduce transmission latency. However, in IoT scenarios, the increase
+                                    in the number of sensing devices or malicious attacks can cause fluctuations in data
+                                    traffic, affecting the processing efficiency of the services. Resilient edge
+                                    computing services possess adaptive capabilities, allowing them to allocate system
+                                    resources to accommodate changes in the current application environment.<br>The
+                                    decentralized and resource-constrained nature of edge computing environments
+                                    presents challenges to achieving resilience. This research proposes a service
+                                    architecture design methodology for resilient edge computing services based on a
+                                    decentralized self-adaptive system and a microservices architecture. Using a
+                                    scenario where fluctuations in data traffic are caused by changes in the number of
+                                    devices in an IoT environment, we establish an experimental edge computing
+                                    environment for implementation and verification. The results demonstrate the
+                                    operational effectiveness of resilient edge computing services in adaptive system
+                                    resources flexibly to adapt to changes in the application environment within a
+                                    decentralized and resource-constrained system.</p>
+                            </div>
+                            <div class="expanded-section">
+                                <p><a href="https://drive.google.com/file/d/1_PNxWXs--av1GsZwkxJ6sf8BmI3ZdYu0/view?usp=sharing"
+                                        target="_blank">Paper Link</a> | <a
+                                        href="https://drive.google.com/file/d/1yBG9iMpgWHWQYv31BKg_hLwUOJYKLlk0/view?usp=sharing"
+                                        target="_blank">Certificate</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="expandable-card">
-                    <div class="card-header">
-                        <div>
-                            <h3>Design and Implementation on Context-Aware Service Software in Pervasive Edge Computing Environment</h3>
-                            <h3>普及邊緣運算環境下情境感知服務軟體之設計與實作</h3>
-                            <p>Zong-Lun Li, <strong>Yi-Te Lu</strong>, Yung-Li Hu, Yennun Huang, Sy-Yen Kuo</p>
-                            <p>Poster presented at 2021 17th Taiwan Conference on Software Engineering (TCSE)</p>
-                            <p><i>Honorable Mention Poster Award</i></p>
+                <div class="showcase-item awarded">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="award-badge">Honorable Mention Poster Award</div>
+                            <div class="item-title">
+                                Design and Implementation on Context-Aware Service Software in Pervasive Edge Computing
+                                Environment <br>
+                                普及邊緣運算環境下情境感知服務軟體之設計與實作
+                            </div>
+                            <p class="item-description">
+                                Zong-Lun Li, <strong>Yi-Te Lu</strong>, Yung-Li Hu, Yennun Huang, Sy-Yen Kuo
+                            </p>
+                            <p class="item-description">
+                                Poster presented at 2021 17th Taiwan Conference on Software Engineering (TCSE)
+                            </p>
                         </div>
                         <div class="expand-icon"></div>
                     </div>
-                    <div class="card-content-expandable">
-                        <div class="card-content-inner">
-                            <p><strong>Abstract: </strong></p>
-                            <p class="abstract">Pervasive edge computing is an edge computing implementation with a focus on integrating the computational capabilities of IoT devices, responding to dynamic changes in application scenarios, and ensuring reliable interactions between edge servers and IoT devices. This approach allows artificial intelligence technologies to be deployed more adaptively and flexibly according to task scenarios, offering greater scalability. Due to the decentralized nature of Pervasive edge computing environments, the high heterogeneity among edge nodes, the extensive use of encapsulation and third-party software services, the need for mobility-aware data processing, and the highly dynamic nature of task environments, software for pervasive edge computing applications must possess context-awareness. Such software should adapt to changes in application scenarios and system states during runtime. This research explores the design and implementation of context-aware service software architecture in pervasive edge computing environments. It proposes methods for software architecture modeling and programming to achieve context-awareness in these environments. The study validates its findings through the simulation of a small-scale autonomous vehicle application.</p>
-                            <p><a href="https://drive.google.com/file/d/1Ou3OLFzM04CoFFgQ7P1DMazBMxNKX3sT/view?usp=sharing" target="_blank">Paper Link</a> | <a href="https://drive.google.com/file/d/1lxrjc99tMxO_jQ8T8XX0o6arHl0CjdBf/view?usp=sharing" target="_blank">Certificate</a> | <a href="https://drive.google.com/file/d/1QWxQXjZGBJ3T_xlvYE-HzHQ87WWxVBSb/view?usp=sharing" target="_blank">Award Certificate</a></p>
+                    <div class="item-meta">
+                        <span>Jul. 2021</span>
+                        <span>TCSE 2021</span>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p>
+                                    - Designed a software development framework for context-aware services in Pervasive
+                                    Edge Computing environments <br>
+                                    - Integrated modeling methods with a MAPE-K based programming model<br>
+                                    - Validated by implementing an autonomous vehicle application
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Abstract</div>
+                                <p class="abstract">Pervasive edge computing is an edge computing implementation with a
+                                    focus on integrating the computational capabilities of IoT devices, responding to
+                                    dynamic changes in application scenarios, and ensuring reliable interactions between
+                                    edge servers and IoT devices. This approach allows artificial intelligence
+                                    technologies to be deployed more adaptively and flexibly according to task
+                                    scenarios, offering greater scalability. Due to the decentralized nature of
+                                    Pervasive edge computing environments, the high heterogeneity among edge nodes, the
+                                    extensive use of encapsulation and third-party software services, the need for
+                                    mobility-aware data processing, and the highly dynamic nature of task environments,
+                                    software for pervasive edge computing applications must possess context-awareness.
+                                    Such software should adapt to changes in application scenarios and system states
+                                    during runtime. This research explores the design and implementation of
+                                    context-aware service software architecture in pervasive edge computing
+                                    environments. It proposes methods for software architecture modeling and programming
+                                    to achieve context-awareness in these environments. The study validates its findings
+                                    through the simulation of a small-scale autonomous vehicle application.</p>
+                            </div>
+                            <div class="expanded-section">
+                                <p><a href="https://drive.google.com/file/d/1Ou3OLFzM04CoFFgQ7P1DMazBMxNKX3sT/view?usp=sharing"
+                                        target="_blank">Paper Link</a> | <a
+                                        href="https://drive.google.com/file/d/1lxrjc99tMxO_jQ8T8XX0o6arHl0CjdBf/view?usp=sharing"
+                                        target="_blank">Certificate</a> | <a
+                                        href="https://drive.google.com/file/d/1QWxQXjZGBJ3T_xlvYE-HzHQ87WWxVBSb/view?usp=sharing"
+                                        target="_blank">Award Certificate</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -635,46 +922,134 @@
 
     <!-- Research Experience Section -->
     <section id="research">
-        <div class="container">
-            <h2 class="section-title">Research Projects</h2>
-            <div class="card">
-                <div class="expandable-card">
-                    <div class="card-header">
-                        <div>
-                            <h3>QoS Adaptation of Edge Computing-Based Metaverse Service in Telemedicine</h3>
-                            <!-- <h3>遠距醫療的邊緣元宇宙服務之服務品質調適</h3> -->
-                            <p>Department of Electrical Engineering, NTU</p>
-                            <p>Advisor: Prof. Sy-Yen Kuo, Prof. Yung-Li Hu</p>
-                        </div>
-                        <div>
-                            <img src="./img/scholarship.png" class="icon-image" />
-                            <p style="color:black"><i>Scholarship</i></p>
+        <div class="showcase-container">
+            <h2 class="category-title">Research Projects</h2>
+            <div class="showcase-grid">
+                <div class="showcase-item awarded">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <!-- <div class="award-badge">College Student Research Scholarship</div> -->
+                            <div class="award-badge">College Student Research Creativity Award</div>
+                            <div class="item-title">
+                                QoS Adaptation of Edge Computing-Based Metaverse Service in Telemedicine
+                            </div>
+                            <div class="tags">
+                                <span class="tag">Artificial intelligence</span>
+                                <span class="tag">Pytorch</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                            <p class="item-description">
+                                Department of Electrical Engineering, NTU <br>Advisor: Prof. Sy-Yen Kuo, Prof. Yung-Li
+                                Hu
+                            </p>
                         </div>
                         <div class="expand-icon"></div>
                     </div>
-                    <div class="card-content-expandable">
-                        <div class="card-content-inner">
-                            <p><strong>Abstract: </strong></p>
-                            <p class="abstract">Mobile edge computing is a vital network service architecture in the modern information industry. It excels in integrating IoT device computing power and ensuring the reliability of interactions between edge computing servers and IoT devices, enabling better quality of service. Computation offloading is a widely used technique within MEC, which addresses limitations such as limited edge device computational resources and high energy consumption. By shifting high-computational and energy-consuming tasks to nearby edge servers, computation offloading reduces computation latency and extends device lifespans. Furthermore, with the rise of smart healthcare and the urgency caused by the pandemic, smart healthcare with the internet of medical things has gained prominence. This research project proposes to enhance the quality of service of smart healthcare within the Mobile Edge Computing framework through computation offloading. Using Taiwan Taoyuan International Airport as an example, the study explores how our approach can improve the accuracy, real-time performance, and reliability of smart emergency medical services.</p>
-                            <a href="https://drive.google.com/file/d/1cl8cJc3rrfhqjSKyOYwMltIrBnF07czh/view?usp=sharing" target="_blank">Project Report Link</a>
+                    <div class="item-meta">
+                        <span>Jul. 2023 - Feb. 2024</span>
+                        <span>Team Lead</span>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p> - Earned the College Student Research Scholarship from the National Science and
+                                    Technology Council<br>
+                                    - Won the College Student Research Creativity Award<br>
+                                    - Collaborated with the Landseed Medical Center at Taoyuan International
+                                    Airports<br>
+                                    - Two publications at TANET 2023 and TCSE 2023
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Abstract</div>
+                                <p class="abstract">
+                                    Mobile edge computing is a vital network service architecture in the modern
+                                    information industry. It excels in integrating IoT device computing power and
+                                    ensuring the reliability of interactions between edge computing servers and IoT
+                                    devices, enabling better quality of service. Computation offloading is a widely used
+                                    technique within MEC, which addresses limitations such as limited edge device
+                                    computational resources and high energy consumption. By shifting high-computational
+                                    and energy-consuming tasks to nearby edge servers, computation offloading reduces
+                                    computation latency and extends device lifespans. Furthermore, with the rise of
+                                    smart healthcare and the urgency caused by the pandemic, smart healthcare with the
+                                    internet of medical things has gained prominence. This research project proposes to
+                                    enhance the quality of service of smart healthcare within the Mobile Edge Computing
+                                    framework through computation offloading. Using Taiwan Taoyuan International Airport
+                                    as an example, the study explores how our approach can improve the accuracy,
+                                    real-time performance, and reliability of smart emergency medical services.
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <p>
+                                    <a href="https://drive.google.com/file/d/1cl8cJc3rrfhqjSKyOYwMltIrBnF07czh/view?usp=sharing"
+                                        target="_blank">
+                                        Project Report Link
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="expandable-card">
-                    <div class="card-header">
-                        <div>
-                            <h3>Decentralized Complex Event Processing Engine applied on Fog Computing</h3>
-                            <h3>應用於霧運算之非集中性複雜事件處理引擎</h3>
-                            <p>Research Center for Information Technology Innovation, Academia Sinica</p>
-                            <p>Advisor: Prof. Yung-Li Hu, Prof. Yen-Nun Huang</p>
+
+                <div class="showcase-item">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="item-title">
+                                Decentralized Complex Event Processing Engine applied on Fog Computing <br>
+                                應用於霧運算之非集中性複雜事件處理引擎
+                            </div>
+                            <p class="item-description">
+                                Research Center for Information Technology Innovation, Academia Sinica <br>Advisor:
+                                Prof. Yung-Li Hu, Prof. Yen-Nun Huang
+                            </p>
                         </div>
                         <div class="expand-icon"></div>
                     </div>
-                    <div class="card-content-expandable">
-                        <div class="card-content-inner">
-                            <p><strong>Abstract: </strong></p>
-                            <p class=""abstract>Complex Event Processing (CEP) is an event-based data processing technology based on logical inference, and has applied on Internet of Things (IoT) applications widely. Due to traditional CEP for IoT applications was executed on cloud systems, so that amount of network resource consumption and high response latency occurred on sensing data transmission. Fog computing, a novel technology move computation and storage resources to network edge of IoT devices, can reduce network resource consumption on data transmission and response latency from remote sites. CEP executed on fog computing systems can save network resource consumption and improve performance on response latency, and enhance interaction between IoT devices. Therefore, in this research project, a decentralized CEP engine is be proposed which can realize event-driven IoT coordination based on microservice technology. The result of this research can realized event-driven IoT services efficiently, and adapt system execution state depended on application and system context.</p>
-                            <a href="https://drive.google.com/file/d/1I_5yAM_XD0D03mhccgCrY4i3oTV1f-5H/view?usp=sharing" target="_blank">Project Report Link</a>
+                    <div class="item-meta">
+                        <span>Aug. 2020 - Dec. 2021</span>
+                        <!-- <span>Team Lead</span> -->
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p>
+                                    - Earned the Research Project Grants from the Ministry of Science and Technology<br>
+                                    - Two publications at TANET 2022 and TCSE 2021
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Abstract</div>
+                                <p class="" abstract>Complex Event Processing (CEP) is an event-based data processing
+                                    technology based on logical inference, and has applied on Internet of Things (IoT)
+                                    applications widely. Due to traditional CEP for IoT applications was executed on
+                                    cloud
+                                    systems, so that amount of network resource consumption and high response latency
+                                    occurred on sensing data transmission. Fog computing, a novel technology move
+                                    computation and storage resources to network edge of IoT devices, can reduce network
+                                    resource consumption on data transmission and response latency from remote sites.
+                                    CEP
+                                    executed on fog computing systems can save network resource consumption and improve
+                                    performance on response latency, and enhance interaction between IoT devices.
+                                    Therefore,
+                                    in this research project, a decentralized CEP engine is be proposed which can
+                                    realize
+                                    event-driven IoT coordination based on microservice technology. The result of this
+                                    research can realized event-driven IoT services efficiently, and adapt system
+                                    execution
+                                    state depended on application and system context.</p>
+                            </div>
+                            <div class="expanded-section">
+                                <p>
+                                    <a href="https://drive.google.com/file/d/1I_5yAM_XD0D03mhccgCrY4i3oTV1f-5H/view?usp=sharing"
+                                        target="_blank">
+                                        Project Report Link
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -706,81 +1081,129 @@
             </div>
         </div>
     </section>
-    
-        <!-- Courses Section -->
-        <section id="work">
-            <div class="container">
-                <h2 class="section-title">Professional Experiences</h2>
-                <div class="card">
-                    <div class="expandable-card">
-                        <div class="card-header">
-                            <div>
-                                <h3>Research Internship</h3>
-                                <p>Department of Computer Science and Engineering, Chinese University of Hong Kong</p>
-                                <p>Advisor: Prof. Sy-Yen Kuo, Prof. Yung-Li Hu</p>
+
+    <!-- Work Section -->
+    <section id="work">
+        <div class="showcase-container">
+            <h2 class="category-title">Professional Experiences</h2>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="item-title">
+                                Research Internship, The Chinese University of Hong Kong, CSE
                             </div>
-                            <div class="expand-icon"></div>
+                            <div class="tags">
+                                <span class="tag">Information Systems</span>
+                                <span class="tag">Natural Language Processing</span>
+                            </div>
+                            <p class="item-description">
+                                Advisor: Prof. Michael R. Lyu, Prof. Irwin King <br>
+                                Project ALFA, an artificial learning financial analyst for stock prediction with multi-view announcement understanding via a knowledge graph-based approach with interpretability
+                            </p>
                         </div>
-                        <div class="card-content-expandable">
-                            <div class="card-content-inner">
-                                <p><strong>Abstract: </strong></p>
-                                <a href="https://drive.google.com/file/d/1OSgfdXq3NEwShgY_m4aNC_f48px6sasx/view?usp=sharing" target="_blank">Final Report Link</a>
+                        <!-- <p>Supported by the Innovation and Technology Fund, Hong Kong</p> -->
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="item-meta">
+                        <!-- <span>ALFA</span> -->
+                        <span>Jun. 2023 - Aug. 2023</span>
+                        <span>Hong Kong, HK (Remote)</span>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p>
+                                    - Improves 5.2% of the model performance by incorporating information from the knowledge graph<br>
+                                    - Supported by the Innovation and Technology Fund, Hong Kong
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Abstract</div>
+                                <p class="abstract">The project involves a comprehensive knowledge graph-based approach
+                                    and presents its experimental results. To begin, we collected 87,182 announcements
+                                    in HKEx from 28/11/2016 to 28/10/2021, which contain stock exchange news and
+                                    important events disclosed by companies. These announcements serve as the foundation
+                                    for our multi-view knowledge graph. We integrate domain-specific Financial Knowledge
+                                    Graph (FKG) data from the gathered announcements and an industrial graph that
+                                    reveals supply chain relationships, resulting in 176,930 nodes and 3,852,518 edges
+                                    contained in the knowledge graph. Next, we develop a graph-based model that performs
+                                    inference over the knowledge graph to predict stock prices. Additionally, ALFA
+                                    offers stock price interpretability by providing explanations for stock price
+                                    changes through the use of probabilistic soft logic (PSL). We show that
+                                    incorporating information from the knowledge graph improves 5.2% of the model
+                                    performance in terms of the APV score, demonstrating the effectiveness of knowledge
+                                    graphs in lifting the accuracy rate of stock prediction in our experiments. Finally,
+                                    we implement our methodology with a user-friendly front-end interface, allowing
+                                    potential users to interact with the system.</p>
+                            </div>
+                            <div class="expanded-section">
+                                <a href="https://drive.google.com/file/d/1OSgfdXq3NEwShgY_m4aNC_f48px6sasx/view?usp=sharing"
+                                    target="_blank">Final Report Link</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
+        </div>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="card">
-                <p>To Be Continued...</p>
-                <!-- <div class="card-content">
-                    <h3>Project Title</h3>
-                    <p>Brief description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="gallery-container">
-                    <div class="gallery">
-                        <div class="gallery-item">
-                            <img src="/api/placeholder/300/200" alt="Project Image 1">
+        <div class="showcase-container">
+            <h2 class="category-title">Notable Projects</h2>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="item-title">
+                                Online Conference System for 2021 International Conference on Dependable Systems and Networks
+                            </div>
+                            <div class="tags">
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Node JS</span>
+                                <span class="tag">React/Express</span>
+                                <span class="tag">HTML/CSS</span>
+                            </div>
+                            <p class="item-description">
+                                An online conference system for DSN 2021, featuring virtual meeting spaces, access control, a news board, and conference recording functionalities
+                            </p>
                         </div>
-                        <div class="gallery-item">
-                            <img src="/api/placeholder/300/200" alt="Project Image 2">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="/api/placeholder/300/200" alt="Project Image 3">
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="item-meta">
+                        <span>Jun. 2021</span>
+                        <span>Backend Developer</span>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p>
+                                    - A reliable and high-throughput online systems deployed on Amazon Web Services for 369 international attendees
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <p>
+                                    <a href="https://github.com/tzuan16/outline-demo" target="_blank">Github Link</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
 
     <!-- extracurricular Section -->
     <section id="extracurricular">
-        <div class="container">
-            <h2 class="section-title">Extracurricular</h2>
-            <div class="card">
+        <div class="showcase-container">
+            <h2 class="category-title">Extracurricular</h2>
+            <div class="showcase-grid">
                 <p>To Be Continued...</p>
-                <!-- <div class="card-content"> -->
-                    <!-- <h3>Course Title</h3> -->
-                    <!-- <p>Institution, Semester/Year</p> -->
-                    <!-- <p>Brief description of the course content and your role.</p> -->
-                <!-- </div> -->
-                <!-- <div class="gallery-container">
-                    <div class="gallery">
-                        <div class="gallery-item">
-                            <img src="/api/placeholder/300/200" alt="Course Image 1">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="/api/placeholder/300/200" alt="Course Image 2">
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -792,7 +1215,9 @@
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p><i class="contact-icon">📧</i> alexlyu0419@gmail.com</p>
-                    <p><i class="contact-icon">📍</i> National Taiwan University<br>Department of Electrical Engineering</p>
+                    <p><i class="contact-icon">📍</i> National Taiwan University<br>Department of Electrical
+                        Engineering
+                    </p>
                     <!-- <p><i class="contact-icon">📱</i> Phone number</p> -->
                 </div>
                 <div class="footer-section">
@@ -843,15 +1268,16 @@
                 });
             });
         });
-        document.querySelectorAll('.expandable-card').forEach(card => {
-            card.addEventListener('click', () => {
-                // Toggle expanded class
-                card.classList.toggle('expanded');
-                
-                // Optionally collapse other cards when one is expanded
-                document.querySelectorAll('.expandable-card').forEach(otherCard => {
-                    if (otherCard !== card) {
-                        otherCard.classList.remove('expanded');
+
+        document.querySelectorAll('.showcase-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Toggle expanded state
+                item.classList.toggle('expanded');
+
+                // Optionally collapse other items
+                document.querySelectorAll('.showcase-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('expanded');
                     }
                 });
             });
