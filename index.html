@@ -512,21 +512,21 @@
             overflow: hidden;
             transition: max-height 0.3s ease-in-out;
         }
-
+        
         .showcase-item.expanded .expanded-content {
             max-height: 800px;
         }
-
+        
         .expanded-content-inner {
             margin-top: 16px;
             padding-top: 16px;
             border-top: 1px solid #e2e8f0;
         }
-
+        
         .expanded-section {
             margin-bottom: 12px;
         }
-
+        
         .expanded-section-title {
             font-weight: 600;
             color: #2d3748;
@@ -601,7 +601,7 @@
                 <a href="#publications" class="nav-item">Publications</a>
                 <a href="#research" class="nav-item">Research Projects</a>
                 <a href="#work" class="nav-item">Professional Experiences</a>
-                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#projects" class="nav-item">Notable Projects</a>
                 <a href="#extracurricular" class="nav-item">Extracurricular</a>
             </div>
         </div>
@@ -684,7 +684,8 @@
                                 基於行動邊緣運算架構之智慧醫療服務品質調適
                             </div>
                             <div class="tags">
-                                <!-- <span class="tag">Artificial intelligence</span> -->
+                                <span class="tag">Artificial intelligence</span>
+                                <span class="tag">Smart Healthcare</span>
                                 <span class="tag">Pytorch</span>
                                 <span class="tag">Docker</span>
                             </div>
@@ -709,7 +710,7 @@
                                 <p>
                                     - Designed a self-adaptive system for emergency healthcare services at airports <br>
                                     - Improve AI-driven service responsiveness by up to 35% <br>
-                                    - - Collaborated with the Landseed Medical Center at Taoyuan International Airports
+                                    - Collaborated with the Landseed Medical Center at Taoyuan International Airports
                                 </p>
                             </div>
                             <div class="expanded-section">
@@ -936,8 +937,10 @@
                             </div>
                             <div class="tags">
                                 <span class="tag">Artificial intelligence</span>
+                                <span class="tag">Smart Healthcare</span>
                                 <span class="tag">Pytorch</span>
                                 <span class="tag">Docker</span>
+                                <!-- <span class="tag">Raspberry Pi</span> -->
                             </div>
                             <p class="item-description">
                                 Department of Electrical Engineering, NTU <br>Advisor: Prof. Sy-Yen Kuo, Prof. Yung-Li
@@ -1097,10 +1100,11 @@
                             <div class="tags">
                                 <span class="tag">Information Systems</span>
                                 <span class="tag">Natural Language Processing</span>
+                                <span class="tag">Stock Prediction</span>
                             </div>
                             <p class="item-description">
                                 Advisor: Prof. Michael R. Lyu, Prof. Irwin King <br>
-                                Project ALFA, an artificial learning financial analyst for stock prediction with multi-view announcement understanding via a knowledge graph-based approach with interpretability
+                                Project ALFA, an artificial learning financial analyst for stock prediction with multi-view announcement understanding via a knowledge graph-based approach with interpretability.
                             </p>
                         </div>
                         <!-- <p>Supported by the Innovation and Technology Fund, Hong Kong</p> -->
@@ -1116,8 +1120,15 @@
                             <div class="expanded-section">
                                 <div class="expanded-section-title">Impact & Recognition</div>
                                 <p>
-                                    - Improves 5.2% of the model performance by incorporating information from the knowledge graph<br>
+                                    - Improves 5.2% of the model performance by incorporating information from the knowledge graph
                                     - Supported by the Innovation and Technology Fund, Hong Kong
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Contribution</div>
+                                <p>
+                                    - Designed a preprocessor to gather announcements and identify meaningful content as the data source, resulting in a clean and comprehensive collection of up to 87,182 announcements from HKEx spanning over five years<br>
+                                    - Employed a human-in-the-loop process with a collection of NLP techniques to extract semantic frames from the corpus to represent the critical events in the announcements, obtaining 106 verbs with 206 semantic frames for announcement understanding and knowledge graph construction, leading to a 5.2% improvement in performance
                                 </p>
                             </div>
                             <div class="expanded-section">
@@ -1146,6 +1157,47 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="showcase-item">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="item-title">
+                                Summer Research Internship, Academia Sinica, CITI
+                            </div>
+                            <div class="tags">
+                                <span class="tag">Arduino</span>
+                                <span class="tag">Construction Material Recognition</span>
+                            </div>
+                            <p class="item-description">
+                                Supervisor: Prof. Yennun Huang <br>
+                            </p>
+                        </div>
+                        <!-- <p>Supported by the Innovation and Technology Fund, Hong Kong</p> -->
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="item-meta">
+                        <span>Jul. 2022 - Aug. 2022</span>
+                        <span>Taipei, Taiwan</span>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Contribution</div>
+                                <p>
+                                    - Developed a construction material recognition and counting model using transfer learning, achieving 90.3% accuracy for real- world factory applications, creating a benchmark of 113 construction material images<br>
+                                    - Contributed to advanced persistent threat (APT) detection research by conducting comparative experiments between the proposed algorithm and NeuroMatch, a neural subgraph learning model<br>
+                                    - Designed an Arduino sensor toolkit for air pollution in factories, providing a low-cost, portable alternative for precision instruments
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Github Links</div>
+                                <p> <a href="https://github.com/AlexLu0419/Recognition-and-Object-Counting-on-Building-Materials/" target="_blank">Recognition and Object Counting on Building Materials</a></p>
+                                <p> <a href="https://github.com/AlexLu0419/Arduino-Sensor-Package/" target="_blank">Arduino Sensor Package</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1167,9 +1219,10 @@
                                 <span class="tag">Node JS</span>
                                 <span class="tag">React/Express</span>
                                 <span class="tag">HTML/CSS</span>
+                                <span class="tag">Amazon Web Services</span>
                             </div>
                             <p class="item-description">
-                                An online conference system for DSN 2021, featuring virtual meeting spaces, access control, a news board, and conference recording functionalities
+                                An online conference system for 2021 International Conference on Dependable Systems and Networks, featuring virtual meeting spaces, access control, a news board, and conference recording functionalities.
                             </p>
                         </div>
                         <div class="expand-icon"></div>
@@ -1189,6 +1242,136 @@
                             <div class="expanded-section">
                                 <p>
                                     <a href="https://github.com/tzuan16/outline-demo" target="_blank">Github Link</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-item">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="item-title">
+                                Map Explorer
+                            </div>
+                            <div class="tags">
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Node JS</span>
+                                <span class="tag">React/Express</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JWT/bcrypt</span>
+                                <span class="tag">Vercel</span>
+                            </div>
+                            <p class="item-description">
+                                An online web platform for sharing, recommending and commenting places to others, featured with account and password protection, map marking, and content filter.
+                            </p>
+                        </div>
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="item-meta">
+                        <span>Dec. 2022</span>
+                        <span>Web Programming</span>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <!-- <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p>
+                                    - <br>
+                                    - <br>
+                                    - 
+                                </p>
+                            </div> -->
+                            <div class="expanded-section">
+                                <p>
+                                    <a href="https://youtu.be/i1zdk_Maaag" target="_blank">Demo Video</a> | 
+                                    <a href="https://github.com/ckocp3/wp1111/tree/main/final">Github Link</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-item awarded">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="award-badge">Top 5 among 20+ teams</div>
+                            <div class="item-title">
+                                3D Reconstruction from Road Marker Feature Points
+                            </div>
+                            <div class="tags">
+                                <span class="tag">Self-driving Car</span>
+                                <spam class="tag">Computer Vision</spam>
+                            </div>
+                            <p class="item-description">
+                                Final project for the course <i>Computer Vision</i> at NTUEE. Identified and annotated road marker feature points to support autonomous vehicle systems, enhancing accuracy in automated navigation and decision-making.
+                            </p>
+                        </div>
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="item-meta">
+                        <spam>May 2023</spam>
+                        <span>Computer Vision</span>
+                        <span>Final Group Project</span>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p>
+                                    - Recognized and converted road markings from images into 3D point clouds, enabling improvement in decision-making for autonomous systems.<br>
+                                    - Achieved a top-five ranking for precision among 20+ competing teams
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <p>
+                                    <a href="https://drive.google.com/file/d/1o-qJGF1flQpgi9RrqHGH-JqLDe5CRQwA/view?usp=sharing" target="_blank">Final Report</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-item">
+                    <div class="showcase-item-inner">
+                        <div class="showcase-item-content">
+                            <div class="highlight-ribbon"></div>
+                            <div class="item-title">
+                                Smart Bike Lock
+                            </div>
+                            <div class="tags">
+                                <span class="tag">Arduino</span>
+                                <span class="tag">Jetson Nano</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <p class="item-description">
+                                Final project for the course <i>Network and Multimedia Lab</i> at NTUEE. Designed a smart bike lock to address the growing issue of stolen and lost bikes on campus, integrating real-time precise location tracking, a facial recognition system, and a burglar alarm for enhanced security.
+                            </p>
+                        </div>
+                        <div class="expand-icon"></div>
+                    </div>
+                    <div class="item-meta">
+                        <span>Jun. 2022</span>
+                        <span>Network and Multimedia Lab</span>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="expanded-content-inner">
+                            <div class="expanded-section">
+                                <div class="expanded-section-title">Impact & Recognition</div>
+                                <p>
+                                    - Utilized AWS face recognition for real time authentication and registration<br>
+                                    - Intergated with IoT device to capture precise location of the bike lock<br>
+                                    - Anti-theft alarm to automatically alert the owner
+                                </p>
+                            </div>
+                            <div class="expanded-section">
+                                <p>
+                                    <a href="https://youtu.be/W9jAA2SJ6TE" target="_blank">Demo Video</a> | 
+                                    <a href="https://github.com/Mecoli1219/NMLab_final">Github Link</a>
                                 </p>
                             </div>
                         </div>
@@ -1225,7 +1408,7 @@
                     <a href="#publications">Publications</a>
                     <a href="#research">Research Projects</a>
                     <a href="#work">Professional Experiences</a>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects">Notable Projects</a>
                     <a href="#extracurricular">Extracurricular</a>
                 </div>
                 <div class="footer-section">
